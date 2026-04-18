@@ -25,5 +25,13 @@
 # pkgdown
 docs/
 
+# internal docs
+CLAUDE.md
+CLAUDE.html
+MODEL_EXPLAINER.md
+MODEL_EXPLAINER.html
+PLAN.md
+PLAN.html
+
 # large raw outputs (keep PNGs + CSVs, skip RDS sim results)
 output/*.rds

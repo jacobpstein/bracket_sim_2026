@@ -677,7 +677,7 @@ champ_plot <- probs_df |>
   base_theme()
 
 ragg::agg_png(
-  file.path(output_dir, "bracket_champion_probs.png")
+  file.path(output_dir, paste0("bracket_champion_probs_", today, ".png"))
   , width = 1200, height = 800, res = 150
 )
 print(champ_plot)
@@ -736,7 +736,7 @@ heatmap_plot <- heatmap_df |>
   )
 
 ragg::agg_png(
-  file.path(output_dir, "bracket_heatmap.png")
+  file.path(output_dir, paste0("bracket_heatmap_", today, ".png"))
   , width = 1200, height = 900, res = 150
 )
 print(heatmap_plot)
